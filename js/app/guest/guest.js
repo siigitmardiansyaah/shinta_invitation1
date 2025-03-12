@@ -241,7 +241,8 @@ export const guest = (() => {
         information = storage('information');
         const token = document.body.getAttribute('data-key');
 
-        document.addEventListener('progress.done', () => booting());
+        // document.addEventListener('progress.done', () => booting());
+        booting();
         document.addEventListener('hide.bs.modal', () => document.activeElement?.blur());
 
         if (!token || token.length <= 0) {
