@@ -2,6 +2,7 @@
     "devDependencies": {
         "@eslint/js": "^9.19.0",
         "eslint": "^9.19.0",
+        "gh-pages": "^6.3.0",
         "globals": "^15.14.0",
         "htmlhint": "^1.1.4",
         "stylelint": "^16.6.1",
@@ -13,12 +14,11 @@
         "lint:html": "htmlhint **/*.html",
         "dev": "npx esbuild js/*.js --bundle --outdir=dist --servedir=.",
         "build": "npx esbuild js/*.js --bundle --minify --outdir=dist",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "esbuild": "^0.24.2"
     },
     "homepage": "https://siigitmardiansyaah.github.io/shinta_invitation1/"
-
-    
 }
