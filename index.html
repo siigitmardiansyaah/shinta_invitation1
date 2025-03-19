@@ -105,9 +105,9 @@
 
         if (parts.length >= 2) {
             nameGuestElement.innerHTML = 
-                'Kepada Yth Bapak/Ibu/Saudara/i<br>' + parts[0] + ' & ' + parts[1];
+                'To Our Respected Guests<br>' + parts[0] + ' & ' + parts[1];
         } else if (parts.length === 1 && parts[0] !== "") {
-            nameGuestElement.innerHTML = 'Kepada Yth Bapak/Ibu/Saudara/i<br>' + parts[0];
+            nameGuestElement.innerHTML = 'To Our Respected Guests' + parts[0];
         } else {
             nameGuestElement.innerHTML = '';
         }
@@ -139,9 +139,12 @@
 
         @media (min-width: 1024px) {
             #welcome {
+                background-image: url("./assets/images/Copy of IMG_9721.jpg");
                 background-size: cover !important;
-                background-image: url("./assets/images/Copy of IMG_9762.jpg");
-                /* ✅ Gambar untuk desktop */
+                background-repeat: no-repeat;
+                background-position: top center; /* Menggeser posisi ke atas */
+                width: 100vw;
+                height: 100vh;
             }
         }
     </style>
@@ -183,7 +186,7 @@
                         <h2 class="font-esthetic mb-4" style="font-size: 2rem;font-weight: bold;">
                             Shinta &amp; Denny
                         </h2>
-                        <p class="m-0" style="font-size: 1rem;font-weight: bold;">Sabtu, 10 Mei 2025</p>
+                        <p class="m-0" style="font-size: 1rem;font-weight: bold;">Sabtu, 10 May 2025</p>
                     </div>
                 </div>
             </div>
@@ -236,8 +239,8 @@
                         class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home" />
 
                     <div class="position-relative text-center p-2">
-                        <h1 class="font-esthetic my-4 pt-2 fw-medium" style="font-size: 3rem;font-weight: bold;">
-                            Undangan Pernikahan
+                        <h1 class="font-esthetic my-4 pt-2" style="font-size: 3rem;font-weight: bold;">
+                            Wedding Invitation
                         </h1>
 
                         <img src="./assets/images/Copy of IMG_9762.jpg" alt="bg"
@@ -247,7 +250,7 @@
                         <h2 class="font-esthetic my-4" style="font-size: 3rem;font-weight: bold;">
                             Shinta &amp; Denny
                         </h2>
-                        <p class="my-2" style="font-size: 1.25rem">Sabtu, 10 Mei 2025</p>
+                        <p class="my-2" style="font-size: 1.25rem">Sabtu, 10 May 2025</p>
 
                         <button class="btn btn-outline-auto btn-sm shadow rounded-pill px-3">
                             <i class="fa-solid fa-calendar-check me-2"></i>Save Google
@@ -278,7 +281,7 @@
                     <!-- <h2 class="font-arabic py-4 m-0" style="font-size: 2rem">
                         بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
                     </h2> -->
-                    <h2 class="font-esthetic py-4 m-0" style="font-size: 2rem;font-weight: bold;">
+                    <h2 class="font-esthetic my-4 pt-2" style="font-size: 3rem;font-weight: bold;">
                         Nammo Buddhaya
                     </h2>
                     <p class="pb-4 px-2 m-0" style="font-size: 0.95rem">
@@ -301,11 +304,11 @@
                         <div data-aos="fade-right" data-aos-duration="2000" class="pb-1">
                             <img src="./assets/images/Copy of IMG_9657.jpg" alt="cowo"
                                 onclick="undangan.guest.modal(this)"
-                                class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" />
+                                class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" style="width: 150px; height: 150px; object-fit: cover; object-position: center 30%;"  />
                             <h2 class="font-esthetic m-0" style="font-size: 2.125rem;font-weight: bold;">
                                 Shinta Rahayu
                             </h2>
-                            <p class="mt-3 mb-1" style="font-size: 1.25rem">Putri Pertama Anak ke-3 dari Tiga Bersaudara</p>
+                            <p class="mt-3 mb-1" style="font-size: 1rem">Putri Pertama Anak ke-3 dari Tiga Bersaudara</p>
                             <p class="mb-0" style="font-size: 0.95rem">
                                 Tn. Thio Yin Sin (Alm.) & Ny. Lim Yenni
                             </p>
@@ -338,13 +341,13 @@
                         </div>
 
                         <div data-aos="fade-left" data-aos-duration="2000" class="pb-1">
-                            <img src="./assets/images/cropped-Copy_of_IMG_9719-removebg-preview.png" alt="cewe"
+                            <img src="./assets/images/Copy of IMG_9719.jpg" alt="cewe"
                                 onclick="undangan.guest.modal(this)"
-                                class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" />
-                            <h2 class="font-esthetic m-0" style="font-size: 2.125rem">
+                                class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" style="width: 150px; height: 150px; object-fit: cover; object-position: center 20%;" />
+                            <h2 class="font-esthetic m-0" style="font-size: 2.125rem;font-weight: bold;">
                                 Denny Setiawan
                             </h2>
-                            <p class="mt-3 mb-1" style="font-size: 1.25rem">Putra Pertama Anak ke-1 dari Empat Bersaudara</p>
+                            <p class="mt-3 mb-1" style="font-size: 1rem">Putra Pertama Anak ke-1 dari Empat Bersaudara</p>
                             <p class="mb-0" style="font-size: 0.95rem">
                                 Tn. Tjio Cinwih (Benny Setiawan) & Ny. Lauw Yuni Ratna Sari
                             </p>
@@ -373,15 +376,15 @@
                 <!-- Firman Allah Subhanahu Wa Ta'ala -->
                 <section class="bg-light-dark pb-3">
                     <div class="container text-center">
-                        <h2 class="font-arabic py-2 m-0" style="font-size: 2rem">
+                        <h2 class="font-arabic py-4 m-0" style="font-size: 1.5rem;font-weight: bold;">
                             SUTTA PITAKA - DIGHA NIKAYA
                         </h2>
 
                         <div class="bg-theme-auto mt-4 p-3 shadow rounded-4" data-aos="fade-up"
                             data-aos-duration="2000">
                             <p class="p-1 mb-3" style="font-size: 0.95rem">
-                                Kebahagiaan duniawi terbesar yang dapat dialami manusia adalah perpaduan dari pernikahan yang
-mengikat dua hati yang saling mencintai menjadi satu.
+                                "Kebahagiaan duniawi terbesar yang dapat dialami manusia adalah perpaduan dari pernikahan yang
+mengikat dua hati yang saling mencintai menjadi satu."
                             </p>
                             <!-- <a class="m-0 p-0 text-theme-auto link-offset-2" style="font-size: 0.95rem" target="_blank"
                                 href="https://quran.com/id/51/49">QS. Adh-Dhariyat: 49</a> -->
@@ -399,7 +402,7 @@ mengikat dua hati yang saling mencintai menjadi satu.
                 <!-- Wedding Date -->
                 <section class="bg-white-black pb-2" id="wedding-date">
                     <div class="container text-center">
-                        <h2 class="font-esthetic py-4 m-0" style="font-size: 2.25rem">
+                        <h2 class="font-esthetic py-4 m-0" style="font-size: 3rem;font-weight: bold;">
                             Moment Bahagia
                         </h2>
 
@@ -433,8 +436,8 @@ mengikat dua hati yang saling mencintai menjadi satu.
                             </div>
                         </div>
 
-                        <p class="py-2 m-0" style="font-size: 0.95rem">
-                            Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami dan memberikan doa restu :
+                        <p class="py-2 m-0" style="font-size:.1.25rem">
+                            Dengan rasa hormat yang mendalam, kami dengan tulus mengundang Anda untuk menyaksikan upacara pernikahan kami dan memberikan restu melalui kehadiran Anda.
                         </p>
 
                         <!-- Love animation -->
@@ -450,41 +453,25 @@ mengikat dua hati yang saling mencintai menjadi satu.
 
                         <div class="overflow-x-hidden">
                             <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">
+                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;font-weight: bold;">
                                     Panigrahavidhi
                                 </h2>
-                                <p style="font-size: 0.95rem">Pukul 11.00 WIB - Selesai</p>
-                                <p style="font-size: 0.85rem;font-weight: bold;">Wihara Sasanaloka Bekasi</p>
-                                <p style="font-size: 0.75rem">Jl. Raya Perjuangan No.42, RT.001/001
+                                <p style="font-size: 1rem">Pukul 11.00 WIB - Selesai</p>
+                                <p style="font-size: 1rem">Wihara Sasanaloka Bekasi</p>
+                                <p style="font-size: 1rem">Jl. Raya Perjuangan No.42, RT.001/001
                                     Kec. Harapan Baru, Kota Bekasi</p>
                             </div>
 
                             <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem">
+                                <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;font-weight: bold;">
                                     Resepsi
                                 </h2>
-                                <p style="font-size: 0.95rem">Pukul 16.00 WIB - Selesai</p>
-                                <p style="font-size: 0.85rem;font-weight: bold;">Graha Ippo Bekasi</p>
-                                <p style="font-size: 0.75rem">Jl. Komp. PT. Hade, RT.002/002
+                                <p style="font-size: 1rem">Pukul 16.00 WIB - Selesai</p>
+                                <p style="font-size: 1rem">Graha Ippo Bekasi</p>
+                                <p style="font-size: 1rem">Jl. Komp. PT. Hade, RT.002/002
                                     Kec. Harapan Baru, Kota Bekasi</p>
                             </div>
                         </div>
-
-                        <p class="py-2 m-0" style="font-size: 0.95rem">Turut Mengundang:</p>
-                        <ul style="font-size: 0.95rem; margin: 0; padding-left: 20px;">
-                            <li><strong>Mempelai Wanita:</strong></li>
-                            <ul>
-                                <li>Kel. Besar Lim Tjin Giok (Alm.)</li>
-                                <li>Kel. Besar Gauw Ernio</li>
-                            </ul>
-                            <li><strong>Mempelai Pria:</strong></li>
-                            <ul>
-                                <li>Kel. Besar Tjio Abun (Alm.)</li>
-                                <li>Kel. Besar Tan Un-Moy (Alm.)</li>
-                                <li>Kel. Besar Lauw Kimsiang (Alm.)</li>
-                            </ul>
-                        </ul>
-
                         <!-- Love animation -->
                         <div class="position-relative">
                             <div class="position-absolute" style="top: 0%; left: 5%">
@@ -497,18 +484,18 @@ mengikat dua hati yang saling mencintai menjadi satu.
                         </div>
 
                         <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
-                            <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem">
+                            <h2 class="font-esthetic m-0 py-2" style="font-size: 3rem;font-weight: bold;">
                                 Hiburan
                             </h2>
-                            <p style="font-size: 0.95rem">Barongsai & Gambang Kromong Muditha</p>
+                            <p style="font-size:1rem;font-weight: bold;">Barongsai & Gambang Kromong Muditha</p>
                         </div>
 
                         <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
                             <a href="https://maps.app.goo.gl/cnoJpqGhadFE2WRQ9" target="_blank"
-                                class="btn btn-outline-auto btn-sm rounded-pill shadow mb-2 px-3"><i
-                                    class="fa-solid fa-map-location-dot me-2"></i>Lihat Google
-                                Maps</a>
-                            <small class="d-block my-1">Jl. Komp. PT. Hade, RT.002/002
+                                class="btn btn-outline-auto btn-lg rounded-pill shadow mb-2 px-4">
+                                <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google Maps
+                            </a>
+                            <small class="d-block my-6">Jl. Komp. PT. Hade, RT.002/002
                                 Kec. Harapan Baru, Kota Bekasi</small>
                         </div>
                     </div>
@@ -518,7 +505,7 @@ mengikat dua hati yang saling mencintai menjadi satu.
                 <section class="bg-white-black pb-5 pt-4" id="gallery">
                     <div class="container">
                         <div class="border rounded-5 shadow p-3">
-                            <h2 class="font-esthetic text-center py-2 m-0" style="font-size: 2.25rem">
+                            <h2 class="font-esthetic text-center py-2 m-0" style="font-size: 3rem;font-weight: bold;">
                                 Galeri
                             </h2>
 
@@ -619,7 +606,7 @@ mengikat dua hati yang saling mencintai menjadi satu.
                 <!-- Love Gift -->
                 <section class="bg-light-dark pb-4">
                     <div class="container text-center">
-                        <h2 class="font-esthetic pt-2 mb-4" style="font-size: 2.25rem">
+                        <h2 class="font-esthetic pt-2 mb-4" style="font-size: 3rem;font-weight: bold;">
                             Love Gift
                         </h2>
                         <p class="mb-3" style="font-size: 0.95rem">
@@ -629,18 +616,17 @@ mengikat dua hati yang saling mencintai menjadi satu.
 
                         <div class="bg-theme-auto rounded-4 shadow p-4 mx-4 mt-2 mb-4 text-start" data-aos="fade-up"
                             data-aos-duration="2500">
-                            <img src="./assets/images/placeholder.webp"
-                                data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png"
+                            <img src="./assets/images/1280px-Bank_Central_Asia.svg.png"
                                 class="img-fluid p-1 rounded"
                                 style="max-width: 9vh; background-color: var(--bs-gray-300)" alt="bca" />
 
                             <div class="d-flex justify-content-between align-items-center mt-1">
                                 <p class="m-0 p-0" style="font-size: 0.95rem">
-                                    ---- ---- ---- 4567
+                                    066 322 2314
                                 </p>
                                 <!-- Ubah juga data-copy sesuai dengan no rekening -->
                                 <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4"
-                                    style="font-size: 0.75rem" data-copy="1234567891234567"
+                                    style="font-size: 0.75rem" data-copy="0663222314"
                                     onclick="undangan.util.copy(this, 'Tersalin')">
                                     <i class="fa-solid fa-copy me-1"></i>Salin
                                 </button>
@@ -782,18 +768,32 @@ mengikat dua hati yang saling mencintai menjadi satu.
     <div class="loading-page bg-white-black" id="welcome" style="opacity: 0">
         <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-scroll">
             <div class="d-flex flex-column text-center">
-                <h2 class="font-esthetic my-4" style="font-size: 3rem; font-weight: bold;color: white;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                <h2 class="font-esthetic my-4" 
+                style="font-size: 3rem; font-weight: bold; 
+                color: #FFD700; /* Warna emas */
+                text-shadow: 5px 5px 10px rgba(0, 0, 0, 1), 
+                             3px 3px 5px rgba(0, 0, 0, 0.8),
+                             1px 1px 0px rgba(255, 215, 0, 0.8);">
                     The Wedding Of
                 </h2>
 
                 <img src="./assets/images/Copy of IMG_9748.jpg" alt="background"
-                    class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto" />
+                    class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto"  style="width: 250px; height: 250px; border-radius: 50%; object-fit: contain; border: 3px solid white; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);" />  
 
-                <h2 class="font-esthetic mb-4" style="font-size: 3rem; font-weight: bold;color: white;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                <h2 class="font-esthetic mb-4" 
+                style="font-size: 3rem; font-weight: bold; 
+           color: #FFD700; /* Warna emas */
+           text-shadow: 5px 5px 10px rgba(0, 0, 0, 1), 
+                        3px 3px 5px rgba(0, 0, 0, 0.8),
+                        1px 1px 0px rgba(255, 215, 0, 0.8);">
                     Shinta &amp; Denny
                 </h2>
                 <div id="guest-name">
-                    <h6 id="name_guest"style="font-size: 2rem; font-weight: bold;color: white;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"></h6>
+                    <h2 id="name_guest" style="font-size: 1rem; font-weight: bold; 
+                    color: #FFD700; /* Warna emas */
+                    text-shadow: 5px 5px 10px rgba(0, 0, 0, 1), 
+                                 3px 3px 5px rgba(0, 0, 0, 0.8),
+                                 1px 1px 0px rgba(255, 215, 0, 0.8);"></h2>
                 </div>
 
                 <button type="button" class="btn btn-light shadow rounded-4 my-3 mx-auto"
@@ -814,7 +814,7 @@ mengikat dua hati yang saling mencintai menjadi satu.
     <!-- Audio Button -->
     <button type="button" id="button-music" style="bottom: 9vh"
         class="btn bg-light-dark border btn-sm rounded-circle btn-float position-fixed shadow-sm"
-        data-url="./assets/music/sound.mp3" aria-label="Change audio" data-offline-disabled="false">
+        data-url="./assets/music/sound.mp3" aria-label="Change audio" data-offline-disabled="true">
         <i class="fa-solid fa-circle-pause spin-button"></i>
     </button>
 
